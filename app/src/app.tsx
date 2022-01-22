@@ -1,12 +1,13 @@
 import * as React from 'react';
-import { TestNpmLink } from 'react-hook-form-render';
+import FormRender from 'react-hook-form-render';
+import style from './app.module.less';
 
 const App = () => {
 
-    TestNpmLink();
-
     return (
-        <div>React Hook Form Render App</div>
+        <div className={style.container}>
+            <FormRender />
+        </div>
     )
 }
 

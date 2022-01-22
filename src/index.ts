@@ -1,5 +1,7 @@
+export { default } from './components/formRender';
+
 const TestNpmLink = () => {
-    console.log('TestNpmLink');
+    console.log(111111);
 }
 
 export {

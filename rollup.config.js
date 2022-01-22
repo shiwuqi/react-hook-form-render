@@ -12,14 +12,22 @@ export default {
             file: 'lib/index.esm.js',
             name: 'react-hook-form-render',
             format: 'esm',
-            globals: { react: 'React' },
+            globals: { 
+                react: 'React',
+                antd: 'antd',
+                'react-dom': 'ReactDOM'
+            },
             exports: 'named',
         },
         {
             file: 'lib/index.cjs.js',
             name: 'react-hook-form-render',
             format: 'cjs',
-            globals: { react: 'React' },
+            globals: { 
+                react: 'React',
+                'antd': 'antd',
+                'react-dom': 'ReactDOM'
+            },
             exports: 'named',
         }
     ],
@@ -29,12 +37,13 @@ export default {
         }),
         json(),
         typescript2({
-            tsconfig: "tsconfig.json", typescript: require("typescript")
+            tsconfig: 'tsconfig.json', typescript: require('typescript')
         }),
         resolve(),
         babel({
             exclude: 'node_modules/**'
         }),
         terser(),
-    ]
+    ],
+    external: ['react', 'react-dom', 'antd']
 };
