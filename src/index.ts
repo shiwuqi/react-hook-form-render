@@ -1,7 +1,7 @@
-const test = () => {
-    console.log(4444444);
+const TestNpmLink = () => {
+    console.log('TestNpmLink');
 }
 
 export {
-    test
+    TestNpmLink
 }

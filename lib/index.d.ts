@@ -1,3 +1,3 @@
-declare const test: () => void;
-export { test };
+declare const TestNpmLink: () => void;
+export { TestNpmLink };
 //# sourceMappingURL=index.d.ts.map

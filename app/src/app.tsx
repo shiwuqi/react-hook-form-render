@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { test } from 'react-hook-form-render';
+import { TestNpmLink } from 'react-hook-form-render';
 
 const App = () => {
 
-    test();
+    TestNpmLink();
 
     return (
         <div>React Hook Form Render App</div>
